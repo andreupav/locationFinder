@@ -7,6 +7,11 @@ import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Build;
+
+import java.io.IOException;
+import java.io.OutputStream;
+import java.io.PrintWriter;
+import java.net.Socket;
 import java.util.Calendar;
 import android.os.Bundle;
 import android.provider.Settings;
@@ -17,6 +22,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -114,6 +120,25 @@ public class MainActivity extends AppCompatActivity {
                 //noinspection MissingPermission
                 locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 500, 0, listener);
 
+
+                Socket socket = null;
+                try {
+                    socket = new Socket("127.0.0.1", 50505);
+                    Toast.makeText(MainActivity.this, "MESSAGING", Toast.LENGTH_LONG).show();
+                    OutputStream out = socket.getOutputStream();
+                    PrintWriter output = new PrintWriter(out);
+
+                    //mStatusText.setText("Sending Data to PC");
+                    output.println("Hello from Android");
+                    //mStatusText.setText("Data sent to PC");
+                    out.flush();
+                    out.close();
+
+                    socket.close();
+                   // mStatusText.setText("Socket closed");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         });
     }
