@@ -1,10 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     >
-    <Button android:id="@+id/btnStart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Start AsyncTask"></Button>
-    <Button android:id="@+id/btnSend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Send Message"></Button>
-    <TextView android:id="@+id/textStatus" android:textSize="24sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Status Goes Here" />
-</LinearLayout>
+    <Button
+        android:id="@+id/btnStart"
+
+        android:text="SOS"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+
+        android:layout_width="167dp"
+        android:layout_height="100dp"
+        android:background="@drawable/buttonshape"
+        android:shadowRadius="5"
+        android:layout_marginBottom="55dp"
+        android:layout_above="@+id/btnSend"
+        android:layout_centerHorizontal="true" />
+
+    <Button android:id="@+id/btnSend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Press to confirm"
+        android:visibility="invisible"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"></Button>
+    <TextView android:id="@+id/textStatus" android:textSize="24sp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:gravity="center"
+        android:layout_below="@+id/btnSend"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

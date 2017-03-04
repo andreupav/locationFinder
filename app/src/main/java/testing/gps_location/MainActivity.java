@@ -26,6 +26,7 @@ package testing.gps_location;
         import android.view.View.OnClickListener;
         import android.widget.Button;
         import android.widget.TextView;
+        import android.widget.Toast;
 
 public class MainActivity extends Activity {
     Button btnStart;
@@ -107,20 +108,21 @@ public class MainActivity extends Activity {
         }
     }
 
-    private OnClickListener btnStartListener = new OnClickListener() {
+    OnClickListener btnStartListener = new OnClickListener() {
         public void onClick(View v){
             btnStart.setVisibility(View.INVISIBLE);
+            btnSend.setVisibility(View.VISIBLE);
             networktask = new NetworkTask(); //New instance of NetworkTask
             networktask.execute();
         }
     };
     OnClickListener btnSendListener = new OnClickListener() {
         public void onClick(View v){
-            textStatus.setText("Sending your location for emergency");
             count = 0;
             //noinspection MissingPermission
             locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, listener);
             networktask.SendDataToNetwork(data);
+            Toast.makeText(MainActivity.this, "Your location has been sent", Toast.LENGTH_LONG).show();
         }
     };
     void configure_button(){
@@ -148,7 +150,7 @@ public class MainActivity extends Activity {
             boolean result = false;
             try {
                 Log.i("AsyncTask", "doInBackground: Creating socket");
-                SocketAddress sockaddr = new InetSocketAddress("10.4.180.92", 5354);
+                SocketAddress sockaddr = new InetSocketAddress("35.157.36.8", 5354);
                 nsocket = new Socket();
                 nsocket.connect(sockaddr, 5000); //10 second connection timeout
                 if (nsocket.isConnected()) {
@@ -206,6 +208,7 @@ public class MainActivity extends Activity {
         protected void onProgressUpdate(byte[]... values) {
             if (values.length > 0) {
                 Log.i("AsyncTask", "onProgressUpdate: " + values[0].length + " bytes received.");
+                textStatus.setVisibility(View.VISIBLE);
                 textStatus.setText(new String(values[0]));
             }
         }
@@ -218,11 +221,12 @@ public class MainActivity extends Activity {
         protected void onPostExecute(Boolean result) {
             if (result) {
                 Log.i("AsyncTask", "onPostExecute: Completed with an Error.");
-                textStatus.setText("There was a connection error.");
+                Toast.makeText(MainActivity.this, "An error has ocurred while trying to connect", Toast.LENGTH_LONG).show();
             } else {
                 Log.i("AsyncTask", "onPostExecute: Completed.");
             }
             btnStart.setVisibility(View.VISIBLE);
+            btnSend.setVisibility(View.INVISIBLE);
         }
     }
 
