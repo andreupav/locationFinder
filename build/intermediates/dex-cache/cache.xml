@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/joanpavia/.android/build-cache/2cd7c93e80bdb45e53a21e66b743fecc88de8b19/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/Users/joanpavia/AndroidStudioProjects/Gps_location/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_cce23b6611ddb89b91ce87ec6543e141e55f687d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/joanpavia/.android/build-cache/9e9db769234cb4381effdc3199b22812db8e52c4/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/Users/joanpavia/AndroidStudioProjects/Gps_location/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_212c1def3c817f8e6711884d0555f53ad601b10a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/joanpavia/.android/build-cache/2d87bb40aef6f2821da0d17ac843ed2cb01f76db/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/Users/joanpavia/AndroidStudioProjects/Gps_location/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_272f6533704c631f22298375acafde213d422eb2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/joanpavia/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/Users/joanpavia/AndroidStudioProjects/Gps_location/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.4.0_7dbe8d72b72a81ac7827fe55fae1608e20d827a5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/joanpavia/.android/build-cache/2d87bb40aef6f2821da0d17ac843ed2cb01f76db/output/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/Users/joanpavia/AndroidStudioProjects/Gps_location/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.4.0_aabab02683cc625e7c801be10459d93ec1977e87/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/joanpavia/AndroidStudioProjects/Gps_location/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="/Users/joanpavia/AndroidStudioProjects/Gps_location/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_7e545b2076d97a93ce16fd3a2e0264eb485c34e2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/joanpavia/.android/build-cache/b92461a3e392b2d5fff648e6e24a42394878b460/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/Users/joanpavia/AndroidStudioProjects/Gps_location/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_513d8eb3f2a418c255cdf5451823a89a19351cf2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/joanpavia/AndroidStudioProjects/Gps_location/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="70bb9ae0ba29489f42a0912b6b64dbb1f9158bb3">
+        <dex dex="/Users/joanpavia/AndroidStudioProjects/Gps_location/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_17390cdcc76a8fb7895e7f2b2da704c226c13505/classes.dex" />
+    </item>
+
+</items>
