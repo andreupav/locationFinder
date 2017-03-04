@@ -3,75 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="/home/david/.android/build-cache/3e85095e8358565e9801180bae923a8b738187e5/output/jars/libs/internal_impl-23.4.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
-        <dex dex="/home/david/Escritorio/HACKUPC/locationFinder/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.4.0_e98369d6519ee24fb7f091421b7f4f0eb55bb65b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/david/Escritorio/HACKUPC/locationFinder/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="fd7c9101377101d3cbcab6e9968db3869429bc6b">
-        <dex dex="/home/david/Escritorio/HACKUPC/locationFinder/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_6655b5c2dace4152fb6f542f4c4ef50ac44b9562/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/david/.android/build-cache/3e85095e8358565e9801180bae923a8b738187e5/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="/home/david/Escritorio/HACKUPC/locationFinder/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_cc7fb0b6031c4a4e9a2eec97009aaef926acc346/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/david/.android/build-cache/166e7b262a425bb84bc44572dc1e7f867acfb1e1/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="/home/david/Escritorio/HACKUPC/locationFinder/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3a173998b5e19414999feca48815f3af046acc37/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/david/Escritorio/HACKUPC/locationFinder/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="/Users/joanpavia/AndroidStudioProjects/Gps_location/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
-        <dex dex="/home/david/Escritorio/HACKUPC/locationFinder/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_5a549be2892b013d836c828f3e14f1b96ad88853/classes.dex" />
+        <dex dex="/Users/joanpavia/AndroidStudioProjects/Gps_location/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_7e545b2076d97a93ce16fd3a2e0264eb485c34e2/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/david/.android/build-cache/2dbaf105fd597ccb852d3c8915de7ac076aafe93/output/jars/classes.jar"
+        jar="/Users/joanpavia/AndroidStudioProjects/Gps_location/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
-        <dex dex="/home/david/Escritorio/HACKUPC/locationFinder/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c9fcb57dd190108d4f80e443900fbd14bf47d17f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/david/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
-        <dex dex="/home/david/Escritorio/HACKUPC/locationFinder/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.4.0_8b8130a011f87724afaecfab92d25c6680a7206a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/david/.android/build-cache/d3f13fd0337000159db3d14b1519f57f5a83c75e/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="/home/david/Escritorio/HACKUPC/locationFinder/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_28a1ac7ead91b3a3c7012e77a7e5dd24e2ad789d/classes.dex" />
+        sha1="d1cf8f5585b4ee878941e82a48eedeafd46c3125">
+        <dex dex="/Users/joanpavia/AndroidStudioProjects/Gps_location/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_17390cdcc76a8fb7895e7f2b2da704c226c13505/classes.dex" />
     </item>
 
 </items>
