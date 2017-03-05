@@ -37,7 +37,6 @@ public class MainActivity extends Activity {
     private TextView t;
     private LocationManager locationManager;
     private LocationListener listener;
-    int count =0;
     String data;
 
     @Override
@@ -57,10 +56,15 @@ public class MainActivity extends Activity {
 
             @Override
             public void onLocationChanged(Location location) {
-                if(count == 0) {
-                    ra(location);
-                    count++;
-                }
+                    locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
+                    Calendar c = Calendar.getInstance();
+                    int seconds = c.get(Calendar.SECOND);
+                    int minutes = c.get(Calendar.MINUTE);
+                    int hour = c.get(Calendar.HOUR);
+                    int day = c.get(Calendar.DAY_OF_MONTH);
+                    int month = c.get(Calendar.MONTH);
+                    int year = c.get(Calendar.YEAR);
+                    data =location.getLatitude() + ";" + location.getLongitude() + ";"+ day + "/" + month + "/" + year + " " + hour + ":" + minutes + ":" + seconds;
             }
 
             @Override
@@ -81,22 +85,7 @@ public class MainActivity extends Activity {
         };
         configure_button();
     }
-    public void ra(Location location){
 
-
-        locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
-
-        Calendar c = Calendar.getInstance();
-        int seconds = c.get(Calendar.SECOND);
-        int minutes = c.get(Calendar.MINUTE);
-        int hour = c.get(Calendar.HOUR);
-        int day = c.get(Calendar.DAY_OF_MONTH);
-        int month = c.get(Calendar.MONTH);
-        int year = c.get(Calendar.YEAR);
-        /*t.append("\n " + location.getLatitude() + ";" + location.getLongitude());*/
-        data =location.getLatitude() + ";" + location.getLongitude() + ";"+ day + "/" + month + "/" + year + " " + hour + ":" + minutes + ":" + seconds;
-        /*t.append("\n " + day + "/" + month + "/" + year + " " + hour + ":" + minutes + ":" + seconds);*/
-    }
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         switch (requestCode){
@@ -118,7 +107,6 @@ public class MainActivity extends Activity {
     };
     OnClickListener btnSendListener = new OnClickListener() {
         public void onClick(View v){
-            count = 0;
             //noinspection MissingPermission
             locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, listener);
             networktask.SendDataToNetwork(data);
